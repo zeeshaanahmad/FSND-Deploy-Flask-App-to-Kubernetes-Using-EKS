@@ -62,6 +62,11 @@ def health():
     return jsonify("Healthy")
 
 
+@APP.route('/hello', methods=['POST', 'GET'])
+def health():
+    return jsonify("hey there!")
+
+
 @APP.route('/auth', methods=['POST'])
 def auth():
     """
